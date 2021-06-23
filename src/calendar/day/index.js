@@ -86,7 +86,7 @@ export default class Day extends Component {
     const date = xdateToData(day);
     const isToday = dateutils.isToday(day);
     const Component = this.getDayComponent();
-    const dayProps = extractComponentProps(Component, this.props);
+    const dayProps = extractComponentProps(Day, this.props);
     const accessibilityLabel = this.getAccessibilityLabel(day, marking, isToday);
 
     return (
